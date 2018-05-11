@@ -5,7 +5,8 @@
 </head>
 <body>
     {% for blogs in blogs.all %}
-        {{ blogs.description}}
+        <img src="{{ blogs.image.url }}"><br>
+        <div>{{ blogs.description }}</div>
     {% endfor %}
 </body>
 </html>
