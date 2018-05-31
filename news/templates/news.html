@@ -1,0 +1,10 @@
+<h1>news</h1>
+{% for new in news.all %}
+{{ new.title }}
+<br>
+{{ new.date }}
+<br>
+<img src="{{ new.image.url }}">
+<br>
+{{ new.text }}
+{% endfor %}
